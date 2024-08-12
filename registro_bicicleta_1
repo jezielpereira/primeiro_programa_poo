@@ -1,0 +1,34 @@
+#1° Opção 
+#Este metódo é escrito de forma mais manual.
+
+class Bicicleta:
+    def __init__ (self, cor, modelo, ano, valor, aro=18, marcha=18):
+       
+        self.modelo = modelo 
+        self.aro = aro 
+        self.marcha = marcha 
+        self.cor = cor
+        self.ano = ano
+        self.valor = valor
+        
+    def buzinar(self):
+        print("Biiiiii...")
+
+    def parar(self):
+        print("hurrrrrrr...")
+        print("Bicicleta parada")
+
+    def correr(self):
+        print("Bicicleta em Movimetno")
+
+    def __str__(self):
+        return f"Bicicleta: {self.modelo} \nAro= {self.aro} \nMarcha= {self.marcha} \nCor= {self.cor} \nAno= {self.ano} \nValor= {self.valor}"
+  
+b1 = Bicicleta ("Cor = vermelha", "Marca = caloi", "Ano = 2022", "Valor = 600")
+b1.buzinar()
+b1.correr()
+b1.parar()
+print(b1.cor, b1.modelo, b1.ano, b1.valor)
+
+b2 = Bicicleta("Verde", "Monark", 2000, 189) 
+print(b2)
